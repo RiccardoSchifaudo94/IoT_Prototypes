@@ -71,11 +71,14 @@ void setup() {
   Serial.println("card initialized.");
 
   rtc.begin();
-
+  
+  //rtc.adjust(DateTime(2020, 10, 25, 14, 54, 0));
+  
   if (! rtc.isrunning()) {
     Serial.println("RTC is NOT running!");
     // following line sets the RTC to the date & time this sketch was compiled
     rtc.adjust(DateTime(__DATE__, __TIME__));
+    
   }
 
 }

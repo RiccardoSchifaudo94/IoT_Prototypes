@@ -3,7 +3,7 @@ int pinB = 4; // Connected to DT
 int encoderPosCount = 0;
 int escEnableA = 5; //enableMotor
 int escEnableB = 6; 
-int escEnable = 9;
+int escEnable = A1;
 int pinALast;
 int aVal;
 boolean bCW;
